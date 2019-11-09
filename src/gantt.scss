@@ -160,7 +160,7 @@ $handle-color: #ddd !default;
 		.pointer {
 			position: absolute;
 			height: 5px;
-			margin: 0 0 0 -5px;
+			margin: 0;
 			border: 5px solid transparent;
 			border-top-color: rgba(0, 0, 0, 0.8);
 		}

@@ -58,6 +58,17 @@ export default class Popup {
             this.pointer.style.top = '2px';
         }
 
+        if (options.position === 'bottom') {
+            const barHeight = parent.gantt_chart.options.bar_height;
+            this.parent.style.left =
+                position_meta.width / 2 + position_meta.x + 'px';
+            this.parent.style.top = position_meta.y + barHeight + 4 + 'px';
+
+            this.pointer.style.transform = 'rotateX(180deg) translateX(-50%)';
+            this.pointer.style.left = '50%';
+            this.pointer.style.top = '-14px';
+        }
+
         // show
         this.parent.style.opacity = 1;
     }

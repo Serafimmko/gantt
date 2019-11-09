@@ -208,6 +208,7 @@ export default class Bar {
             title: this.task.name,
             subtitle: subtitle,
             task: this.task,
+            position: 'top',
         });
     }
 
